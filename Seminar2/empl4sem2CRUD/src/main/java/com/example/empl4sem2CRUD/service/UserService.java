@@ -23,5 +23,14 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    //public void deleteById(int id)
+    public void deleteById(int id) {
+        userRepository.deleteById(id);
+    }
+    public User getOne(int id) {
+        return userRepository.getOne(id);
+    }
+
+    public User update(User user) {
+        return userRepository.update(user);
+    }
 }
